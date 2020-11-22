@@ -1,7 +1,7 @@
 {
-  "name": "git-q",
+	"name": "git-q",
 	"displayName": "Git Q",
-	"description": "Git Styled Commit, Tag, Stash ETC",
+	"description": "Git Styled Commit, Tag, Stash and etc",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.51.0"
@@ -10,14 +10,24 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:git-q.helloWorld"
+		"onCommand:git-q.qommit",
+		"onCommand:git-q.taq",
+		"onCommand:git-q.qash"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "git-q.helloWorld",
-				"title": "Hello World"
+				"command": "git-q.qommit",
+				"title": "Git Q: Commit"
+			},
+			{
+				"command": "git-q.taq",
+				"title": "Git Q: Tag"
+			},
+			{
+				"command": "git-q.qash",
+				"title": "Git Q: Stash"
 			}
 		]
 	},

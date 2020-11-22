@@ -1,27 +1,25 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode';
+import * as vscode from 'vscode'
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
+  let disposable
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "git-q" is now active!');
+  // @command - git-q.qommit
+  disposable = vscode.commands.registerCommand('git-q.qommit', () => {
+    vscode.window.showInformationMessage('Hello World from Git Q!')
+  })
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('git-q.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
+  // @command - git-q.taq
+  context.subscriptions.push(disposable)
+  disposable = vscode.commands.registerCommand('git-q.taq', () => {
+    vscode.window.showInformationMessage('Hello World from Git Q!')
+  })
+  context.subscriptions.push(disposable)
 
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from Git Q!');
-	});
-
-	context.subscriptions.push(disposable);
+  // @command - git-q.qash
+  disposable = vscode.commands.registerCommand('git-q.qash', () => {
+    vscode.window.showInformationMessage('Hello World from Git Q!')
+  })
+  context.subscriptions.push(disposable)
 }
 
-// this method is called when your extension is deactivated
 export function deactivate() {}
