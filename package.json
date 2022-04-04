@@ -4,7 +4,7 @@
 	"description": "Git Styled Commit, Tag, Stash and etc",
 	"version": "0.0.1",
 	"engines": {
-		"vscode": "^1.65.2"
+		"vscode": "^1.66.0"
 	},
 	"categories": [
 		"Other"
@@ -40,13 +40,13 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.65.0",
+		"@types/vscode": "^1.66.0",
 		"@types/glob": "^7.2.0",
 		"@types/mocha": "^9.1.0",
 		"@types/node": "^14.18.12",
 		"eslint": "^8.12.0",
-		"@typescript-eslint/eslint-plugin": "^5.16.0",
-		"@typescript-eslint/parser": "^5.16.0",
+		"@typescript-eslint/eslint-plugin": "^5.17.0",
+		"@typescript-eslint/parser": "^5.17.0",
 		"glob": "^7.2.0",
 		"mocha": "^9.2.2",
 		"typescript": "^4.6.3",
